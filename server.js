@@ -25,11 +25,13 @@ app.put( "/name/:newName", mainCtrl.updateName );
 app.put( "/location/:newLocation", mainCtrl.updateLocation );
 
 //POSTS//
-// app.post( "/hobbies", mainCtrl.addHobby );
-// app.post( "/occupations", mainCtrl.addOccupations );
-// app.post( "/family", mainCtrl.addFamily );
-// app.post( "/restaurants", mainCtrl.addRestaurant );
+app.post( "/hobbies", mainCtrl.addHobby );
+app.post( "/occupations", mainCtrl.addOccupation );
+app.post( "/family", mainCtrl.addFamily );
+app.post( "/restaurants", mainCtrl.addRestaurant );
 
-//Add Skills Attribute//
+// Add Skills Attribute //
+
+// Secrets //
 
 app.listen( port, () => console.log( `Express listening on ${ port }`) );
